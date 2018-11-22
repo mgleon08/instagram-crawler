@@ -3,10 +3,13 @@ module InstagramCrawler
     def initialize(*targets)
       @targets = targets
       @shell_colors = {
-        light_red:   '\\e\\[0;91;49m',
-        light_green: '\\e\\[0;92;49m',
-        light_cyan:  '\\e\\[0;96;49m',
-        out_put:     '\\e\\[0m'
+        light_red:     '\\e\\[0;91;49m',
+        light_green:   '\\e\\[0;92;49m',
+        light_yellow:  '\\e\\[0;93;49m',
+        light_blue:    '\\e\\[0;94;49m',
+        light_magenta: '\\e\\[0;95;49m',
+        light_cyan:    '\\e\\[0;96;49m',
+        out_put:       '\\e\\[0m'
       }
     end
 

@@ -30,15 +30,15 @@ module InstagramCrawler
           time = parse_to_date(node["taken_at_timestamp"])
 
           if node["is_video"]
-            Logger.info "========VIDEO========"
+            Logger.info "========VIDEO========".light_yellow
             url = node["video_url"]
             output(time, url)
             File.download(url, 'video', time)
           elsif !node["edge_sidecar_to_children"].nil?
-            Logger.info "========POST========"
+            Logger.info "========POST========".light_magenta
             parse_post(node["edge_sidecar_to_children"]["edges"], time)
           else
-            Logger.info "========PHOTO========"
+            Logger.info "========PHOTO========".light_green
             url = node["display_url"]
             output(time, node["display_url"])
             File.download(url, 'photo', time)

@@ -50,17 +50,17 @@ module InstagramCrawler
           page_url = "https://www.instagram.com/p/#{node["shortcode"]}/"
 
           if node["is_video"]
-            Logger.info "========VIDEO========"
+            Logger.info "========VIDEO========".light_yellow
             url = Html.new(page_url).parsing_video_page
             output(time, url)
             File.download(url, 'video', time)
           else
             shortcode_media = Html.new(page_url).parsing_photo_page
             if shortcode_media.is_a? Array
-              Logger.info "========POST========"
+              Logger.info "========POST========".light_magenta
               parse_post(shortcode_media, time)
             else
-              Logger.info "========PHOTO========"
+              Logger.info "========PHOTO========".light_green
               url = shortcode_media
               output(time, url)
               File.download(url, 'photo', time)
