@@ -3,7 +3,7 @@ PATH
   specs:
     instagram_crawler (0.1.0)
       colorize (~> 0.8)
-      http (~> 4.0.0)
+      http (~> 4.0)
       nokogiri (~> 1.8)
 
 GEM
