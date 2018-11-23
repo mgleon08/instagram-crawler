@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "instagram_crawler/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "instagram_crawler"
+  spec.name          = "instagram-crawler"
   spec.version       = InstagramCrawler::VERSION
   spec.authors       = ["Leon Ji"]
   spec.email         = ["mgleon08@gmail.com"]
 
   spec.summary       = %q{The easiest way to download instagram photos, posts and videos.}
   spec.description   = %q{This is a ruby gem to crawl instagram photos, posts and videos for download.}
-  spec.homepage      = "https://github.com/mgleon08/instagram_crawler"
+  spec.homepage      = "https://github.com/mgleon08/instagram-crawler"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "https://rubygems.org/"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://github.com/mgleon08/instagram_crawler"
-    spec.metadata["changelog_uri"] = "https://github.com/mgleon08/instagram_crawler"
+    spec.metadata["source_code_uri"] = "https://github.com/mgleon08/instagram-crawler"
+    spec.metadata["changelog_uri"] = "https://github.com/mgleon08/instagram-crawler"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   spec.bindir        = "bin"
-  spec.executables   = ["instagram_crawler"]
+  spec.executables   = ["instagram-crawler"]
   spec.require_paths = ["lib"]
 
   spec.required_ruby_version = ">= 2.5.1"

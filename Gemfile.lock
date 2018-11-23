@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    instagram_crawler (0.1.0)
+    instagram-crawler (0.1.0)
       colorize (~> 0.8)
       http (~> 4.0)
       nokogiri (~> 1.8)
@@ -51,7 +51,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.17)
-  instagram_crawler!
+  instagram-crawler!
   rake (~> 10.0)
   rspec (~> 3.0)
 

@@ -9,7 +9,7 @@
 ## Installation
 
 ```
-$ gem install instagram_crawler
+$ gem install instagram-crawler
 ```
 
 ## Setting env variable
@@ -29,7 +29,7 @@ export sessionid=[your instagram sessionid]
 `-u || --user_name`
 
 ```ruby
-instagram_crawler -u <user_name>
+instagram-crawler -u <user_name>
 ```
 
 ### Download files after this date (YYYYMMDD)
@@ -37,7 +37,7 @@ instagram_crawler -u <user_name>
 `-a || --after `
 
 ```ruby
-instagram_crawler -u <user_name> -d -a 20181120
+instagram-crawler -u <user_name> -d -a 20181120
 ```
 
 ### Generate log file
@@ -45,32 +45,32 @@ instagram_crawler -u <user_name> -d -a 20181120
 `-l || --log `
 
 ```ruby
-instagram_crawler -u <user_name> -l
+instagram-crawler -u <user_name> -l
 ```
 
 ### Help
 
-`instagram_crawler -h | --help`
+`instagram-crawler -h | --help`
 
 ```ruby
 Usage:
-  instagram_crawler [options]
-  See https://github.com/mgleon08/instagram_crawler for more information.
+  instagram-crawler [options]
+  See https://github.com/mgleon08/instagram-crawler for more information.
 
 options:
     -u, --username USERNAME          Instagram username
     -d, --download                   Download files
     -a, --after DATE                 Download files after this date (YYYYMMDD)
     -l, --log                        Generate a log file in the current directory
-    -v, --version                    Show the instagram_crawler version
+    -v, --version                    Show the instagram-crawler version
     -h, --help                       Show this message
 ```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [`https://github.com/mgleon08/instagram_crawler/pulls`](https://github.com/mgleon08/instagram_crawler/pulls)
+Bug reports and pull requests are welcome on GitHub at [`https://github.com/mgleon08/instagram-crawler/pulls`](https://github.com/mgleon08/instagram-crawler/pulls)
 
 ## License
 
-* Copyright (c) 2018 Leon Ji. See [LICENSE.txt](https://github.com/mgleon08/instagram_crawler/blob/master/LICENSE.txt) for further details.
+* Copyright (c) 2018 Leon Ji. See [LICENSE.txt](https://github.com/mgleon08/instagram-crawler/blob/master/LICENSE.txt) for further details.
 * The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

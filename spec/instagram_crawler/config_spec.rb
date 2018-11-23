@@ -9,8 +9,8 @@ RSpec.describe InstagramCrawler::Config do
     config.user_name = "marvel"
     expect(config.user_name).to eq("marvel")
     expect(config.base_url).to eq("#{config.default_url}/marvel/")
-    expect(config.base_path).to eq("./instagram_crawler/marvel")
-    expect(config.log_path).to eq("./instagram_crawler/marvel/log_file")
+    expect(config.base_path).to eq("./instagram-crawler/marvel")
+    expect(config.log_path).to eq("./instagram-crawler/marvel/log_file")
   end
 
   it 'after_date=' do

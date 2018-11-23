@@ -9,8 +9,8 @@ module InstagramCrawler
       def user_name=(user_name)
         @user_name = user_name
         @base_url  = "#{default_url}/#{user_name}/"
-        @base_path = "./instagram_crawler/#{user_name}"
-        @log_path = "./instagram_crawler/#{user_name}/log_file"
+        @base_path = "./instagram-crawler/#{user_name}"
+        @log_path = "./instagram-crawler/#{user_name}/log_file"
       end
 
       def after_date=(after_date)

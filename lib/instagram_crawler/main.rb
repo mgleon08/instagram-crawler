@@ -2,7 +2,7 @@ module InstagramCrawler
   class Main
     def self.run
       Logger.info text_to_ASCII.light_red
-      Logger.info "Running instagram_crawler v#{InstagramCrawler::VERSION}\n"
+      Logger.info "Running instagram-crawler v#{InstagramCrawler::VERSION}\n"
       start_time = Time.now
       File.mkdir
       page_info, user_id = Parser::Html.new(Config.base_url).parsing

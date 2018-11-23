@@ -20,7 +20,7 @@ module InstagramCrawler
         opts.on('-d', '--download', 'Download files') { |download| Config.download = true }
         opts.on('-a', '--after DATE', 'Download files after this date (YYYYMMDD)') { |after_date| Config.after_date = after_date }
         opts.on('-l', '--log', 'Generate a log file in the current directory') { self.log = true }
-        opts.on('-v', '--version', 'Show the instagram_crawler version') { puts("instagram_crawler #{InstagramCrawler::VERSION}"); exit }
+        opts.on('-v', '--version', 'Show the instagram-crawler version') { puts("instagram-crawler #{InstagramCrawler::VERSION}"); exit }
         opts.on('-h', '--help', 'Show this message') { puts(opts); exit }
         opts.parse!(@args)
       end
@@ -28,8 +28,8 @@ module InstagramCrawler
       def usage_msg
         <<~USAGE.freeze
         Usage:
-          instagram_crawler [options]
-          See https://github.com/mgleon08/instagram_crawler for more information.
+          instagram-crawler [options]
+          See https://github.com/mgleon08/instagram-crawler for more information.
         USAGE
       end
 
