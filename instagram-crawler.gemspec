@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["mgleon08@gmail.com"]
 
   spec.summary       = %q{The easiest way to download instagram photos, posts and videos.}
-  spec.description   = %q{This is a ruby gem to crawl instagram photos, posts and videos for download.}
+  spec.description   = %q{Crawl instagram photos, posts and videos for download.}
   spec.homepage      = "https://github.com/mgleon08/instagram-crawler"
   spec.license       = "MIT"
 
