@@ -1,5 +1,13 @@
 # Instagram Crawler
 
+[![Gem Version](https://badge.fury.io/rb/instagram-crawler.svg)](https://badge.fury.io/rb/instagram-crawler)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a1625a5a812f515bdd91/maintainability)](https://codeclimate.com/github/mgleon08/instagram-crawler/maintainability)
+[![Build Status](https://travis-ci.org/mgleon08/instagram-crawler.svg?branch=master)](https://travis-ci.org/mgleon08/instagram-crawler)
+[![Coverage Status](https://coveralls.io/repos/github/mgleon08/instagram-crawler/badge.svg?branch=master)](https://coveralls.io/github/mgleon08/instagram-crawler?branch=master)
+[![security](https://hakiri.io/github/mgleon08/instagram-crawler/master.svg)](https://hakiri.io/github/mgleon08/instagram-crawler/master)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mgleon08/instagram-crawler/blob/master/LICENSE.txt)
+
+
 > The easiest way to download instagram photos, posts and videos.
 
 <img src="screenshots/logo.png" width="200" align="center">
