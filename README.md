@@ -74,6 +74,20 @@ options:
     -h, --help                       Show this message
 ```
 
+## Docker
+
+```docker
+# make sure already setting env variable
+# you can setting sessionid in local use $sessionid or pass sessionid to docker
+# $PWD/instagram-crawler is file store path
+
+# pull image
+docker pull mgleon08/instagram-crawler
+
+# docker run
+docker run -it --rm -v $PWD/instagram-crawler:/instagram-crawler -e sessionid=$sessionid --name marvel mgleon08/instagram-crawler -u marvel -a 20181124 -d -l
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at [`https://github.com/mgleon08/instagram-crawler/pulls`](https://github.com/mgleon08/instagram-crawler/pulls)
