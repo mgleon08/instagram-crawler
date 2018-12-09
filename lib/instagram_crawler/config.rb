@@ -4,7 +4,7 @@ module InstagramCrawler
     class << self
       attr_reader :default_url, :user_name, :base_url, :base_path,
                   :log_path, :after_date, :parse_date
-      attr_accessor :download
+      attr_accessor :download, :proxy
 
       def user_name=(user_name)
         @user_name = user_name

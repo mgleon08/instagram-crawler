@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 require_relative '../lib/instagram_crawler'
-
 begin
   raise InstagramCrawler::Errors::EnvError if ENV["sessionid"].nil?
   args = InstagramCrawler::Parser::Args.new(ARGV)

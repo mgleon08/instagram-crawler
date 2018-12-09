@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    instagram-crawler (0.1.1)
+    instagram-crawler (0.2.0)
       colorize (~> 0.8)
       http (~> 4.0)
       nokogiri (~> 1.8)

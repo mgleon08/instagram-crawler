@@ -56,6 +56,14 @@ instagram-crawler -u <user_name> -d -a 20181120
 instagram-crawler -u <user_name> -l
 ```
 
+### Proxy
+
+`-p|| --proxy `
+
+```ruby
+instagram-crawler -u <user_name> -p http://example.com
+```
+
 ### Help
 
 `instagram-crawler -h | --help`
@@ -70,6 +78,7 @@ options:
     -d, --download                   Download files
     -a, --after DATE                 Download files after this date (YYYYMMDD)
     -l, --log                        Generate a log file in the current directory
+    -p, --proxy HOSTNAME             Specify hostname of your proxy server (port: 8080)
     -v, --version                    Show the instagram-crawler version
     -h, --help                       Show this message
 ```
