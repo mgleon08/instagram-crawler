@@ -48,8 +48,8 @@ module InstagramCrawler
 
       def get_json(url)
         http = HTTP.cookies(sessionid: ENV["sessionid"])
-        res = Config.proxy ?
-          http.via(Config.proxy, 8080).get(url) : http.get(url)
+        res = Config.proxyname ?
+          http.via(Config.proxyname, Config.port).get(url) : http.get(url)
         raise Errors::HttpError, "#{res.code} #{res.reason}" if res.code != 200
         res.to_s
       end

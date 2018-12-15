@@ -25,8 +25,8 @@ module InstagramCrawler
       private
 
       def get_binary_data(url)
-        res = Config.proxy ?
-          HTTP.via(Config.proxy, 8080).get(url) : HTTP.get(url)
+        res = Config.proxyname ?
+          HTTP.via(Config.proxyname, Config.port).get(url) : HTTP.get(url)
         raise Errors::HttpError, "#{res.code} #{res.reason}" if res.code != 200
         res.to_s
       end

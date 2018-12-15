@@ -58,10 +58,10 @@ instagram-crawler -u <user_name> -l
 
 ### Proxy
 
-`-p|| --proxy `
+`-P || --proxyname ` `-p || --port`
 
 ```ruby
-instagram-crawler -u <user_name> -p http://example.com
+instagram-crawler -u <user_name> -P http://example.com -p 1234
 ```
 
 ### Help
@@ -78,7 +78,8 @@ options:
     -d, --download                   Download files
     -a, --after DATE                 Download files after this date (YYYYMMDD)
     -l, --log                        Generate a log file in the current directory
-    -p, --proxy HOSTNAME             Specify hostname of your proxy server (port: 8080)
+    -P, --proxyname PROXYNAME        Specify proxyname of your proxy server
+    -p, --port PORT                  Specify port of your proxy server (default port: 8080)
     -v, --version                    Show the instagram-crawler version
     -h, --help                       Show this message
 ```
