@@ -70,7 +70,8 @@ module InstagramCrawler
       end
 
       def get_html(url)
-        res = HTTP.get(url)
+        res = Config.proxyname ?
+          HTTP.via(Config.proxyname, Config.port).get(url) : HTTP.get(url)
         raise Errors::HttpError, "#{res.code} #{res.reason}" if res.code != 200
         res.to_s
       end

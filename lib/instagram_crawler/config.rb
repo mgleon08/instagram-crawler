@@ -4,7 +4,8 @@ module InstagramCrawler
     class << self
       attr_reader :default_url, :user_name, :base_url, :base_path,
                   :log_path, :after_date, :parse_date
-      attr_accessor :download
+      attr_accessor :download, :proxyname
+      attr_writer :port
 
       def user_name=(user_name)
         @user_name = user_name
@@ -16,6 +17,10 @@ module InstagramCrawler
       def after_date=(after_date)
         @after_date = after_date
         @parse_date = Time.parse(after_date).to_i
+      end
+
+      def port
+        @port ? @port.to_i : 8080
       end
     end
   end
