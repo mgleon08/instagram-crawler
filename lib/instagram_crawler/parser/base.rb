@@ -5,7 +5,10 @@ module InstagramCrawler
 
       def parse_post(posts, time)
         posts.each.with_index(1) do |post, index|
-          url = post["node"]["display_url"]
+          url =
+            post["node"]["is_video"] ?
+            post["node"]["video_url"] :
+            post["node"]["display_url"]
           output(time, url)
           File.download(url, "post/#{time}", "#{index}.#{time}")
         end
