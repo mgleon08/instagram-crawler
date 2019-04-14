@@ -48,6 +48,14 @@ instagram-crawler -u <user_name>
 instagram-crawler -u <user_name> -d -a 20181120
 ```
 
+### Download files before this date (YYYYMMDD)
+
+`-b || --before `
+
+```ruby
+instagram-crawler -u <user_name> -d -b 20181120
+```
+
 ### Generate log file
 
 `-l || --log `
@@ -77,6 +85,7 @@ options:
     -u, --username USERNAME          Instagram username
     -d, --download                   Download files
     -a, --after DATE                 Download files after this date (YYYYMMDD)
+    -b, --before DATE                Download files before this date (YYYYMMDD)
     -l, --log                        Generate a log file in the current directory
     -P, --proxyname PROXYNAME        Specify proxyname of your proxy server
     -p, --port PORT                  Specify port of your proxy server (default port: 8080)

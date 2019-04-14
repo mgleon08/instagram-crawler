@@ -16,6 +16,12 @@ RSpec.describe InstagramCrawler::Config do
   it 'after_date=' do
     config.after_date=("20181110")
     expect(config.after_date).to eq("20181110")
-    expect(config.parse_date).to eq(Time.parse("20181110").to_i)
+    expect(config.parse_after_date).to eq(Time.parse("20181110").to_i)
+  end
+
+   it 'before_date=' do
+    config.before_date=("20181110")
+    expect(config.before_date).to eq("20181110")
+    expect(config.parse_before_date).to eq(Time.parse("20181110").to_i)
   end
 end

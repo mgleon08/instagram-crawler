@@ -26,7 +26,8 @@ module InstagramCrawler
       def loop_edges(edges)
         edges.each do |edge|
           node = edge["node"]
-          check_time(node["taken_at_timestamp"])
+          next if Config.before_date && (Config.parse_before_date < node["taken_at_timestamp"])
+          check_after_time(node["taken_at_timestamp"])
           time = parse_to_date(node["taken_at_timestamp"])
 
           if node["is_video"]

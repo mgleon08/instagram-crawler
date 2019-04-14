@@ -22,8 +22,8 @@ module InstagramCrawler
         Time.at(ts).strftime('%Y-%m-%dT%H:%M')
       end
 
-      def check_time(time)
-        if Config.after_date && (Config.parse_date > time)
+      def check_after_time(time)
+        if Config.after_date && (Config.parse_after_date > time)
           Logger.info "\nSuccess, the files after #{Config.after_date} have been downloaded!".light_green
           exit
         end

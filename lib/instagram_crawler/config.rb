@@ -3,7 +3,7 @@ module InstagramCrawler
     @default_url = "https://www.instagram.com".freeze
     class << self
       attr_reader :default_url, :user_name, :base_url, :base_path,
-                  :log_path, :after_date, :parse_date
+                  :log_path, :after_date, :before_date, :parse_after_date, :parse_before_date
       attr_accessor :download, :proxyname
       attr_writer :port
 
@@ -16,7 +16,12 @@ module InstagramCrawler
 
       def after_date=(after_date)
         @after_date = after_date
-        @parse_date = Time.parse(after_date).to_i
+        @parse_after_date = Time.parse(after_date).to_i
+      end
+
+      def before_date=(before_date)
+        @before_date = before_date
+        @parse_before_date = Time.parse(before_date).to_i
       end
 
       def port
