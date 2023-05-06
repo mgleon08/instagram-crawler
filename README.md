@@ -40,20 +40,20 @@ export sessionid=[your instagram sessionid]
 instagram-crawler -u <user_name>
 ```
 
-### Download files after this date (YYYYMMDD)
+### Download files after this date following this format: YYYYMMDD. E.g. 20230506
 
 `-a || --after `
 
 ```ruby
-instagram-crawler -u <user_name> -d -a 20181120
+instagram-crawler -u <user_name> -d -a <after_date>
 ```
 
-### Download files before this date (YYYYMMDD)
+### Download files before this date following this format: YYYYMMDD. E.g. 20230506
 
 `-b || --before `
 
 ```ruby
-instagram-crawler -u <user_name> -d -b 20181120
+instagram-crawler -u <user_name> -d -b <before_date>
 ```
 
 ### Generate log file
